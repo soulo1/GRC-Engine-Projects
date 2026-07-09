@@ -4,7 +4,7 @@ variable "region" {
   default     = "us-east-1"
 }
 
-variable "six-week-project" {
+variable "project_name" {
   type        = string
   description = "Short project identifier. Becomes part of bucket names and the Project tag."
   validation {
@@ -13,7 +13,7 @@ variable "six-week-project" {
   }
 }
 
-variable "dev" {
+variable "environment" {
   type        = string
   description = "Deployment environment. Drives the Environment tag."
   validation {
